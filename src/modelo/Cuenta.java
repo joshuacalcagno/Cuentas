@@ -14,6 +14,8 @@ public abstract class Cuenta {
 	protected List<Cliente> clientes;
 	protected List<Movimiento> movimientos;
 	
+	}
+	
 	
 	public Cuenta(Cliente cliente) {
 		this.nroCuenta = null;
