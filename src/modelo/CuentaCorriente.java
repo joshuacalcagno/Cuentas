@@ -21,7 +21,7 @@ public class CuentaCorriente extends Cuenta {
 	public int extraer(float importe) throws CuentaException {
 		if(this.saldo + this.descubiertoHabilitado > importe) {
 			this.saldo -= importe;
-			Movimiento movimiento = new Movimiento(Calendar.getInstance().getTime(), "Extraccion", importe);
+			Movimiento movimiento = new Movimiento(Calendar.getInstance().getTime(), "Extracción", importe);
 			this.movimientos.add(movimiento);
 			return movimiento.getNroMovimiento();
 		}
